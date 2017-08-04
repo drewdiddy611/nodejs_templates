@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"config": "npm install --save sequelize pg pg-hstore express express-handlebars body-parser && echo \"***** PLEASE SETUP config/config.json with your DB credentials *****\"",
 		"start": "nodemon app",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"seed": "sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all",
